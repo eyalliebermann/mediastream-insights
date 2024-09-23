@@ -1,0 +1,17 @@
+# Ignore dotenv environment variable files
+.env
+.env*
+
+venv/
+venv*/
+
+# Jupyter temp files
+**/.ipynb_checkpoints/
+
+# Bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.DS_Store
