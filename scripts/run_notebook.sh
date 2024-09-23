@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 set -e  # Exit immediately if a command exits with a non-zero status.
 #set -x  # Print commands and their arguments as they are executed.
 echo $SHELL
@@ -15,9 +15,9 @@ NOTEBOOKS_DIR="$PROJECT_ROOT/notebooks"
 echo "Notebooks directory: $NOTEBOOKS_DIR"
 
 ENV_FILE="$PROJECT_ROOT/.env"
-VENV_DIR="$NOTEBOOKS_DIR/venv.notebooks"
-REQUIREMENTS_FILE="$NOTEBOOKS_DIR/requirements.notebooks.txt"
-BASE_REQUIREMENTS_FILE="$NOTEBOOKS_DIR/requirements.notebooks.base.txt"
+VENV_DIR="$NOTEBOOKS_DIR/venv_notebooks"
+REQUIREMENTS_FILE="$NOTEBOOKS_DIR/requirements_notebooks.txt"
+BASE_REQUIREMENTS_FILE="$NOTEBOOKS_DIR/requirements_notebooks_base.txt"
 
 
 # Change directory to the top directory
@@ -34,8 +34,8 @@ fi
 
 # Check if venv exists, if not create it
 if [ ! -d "VENV_DIR" ]; then
-    echo -e "\n\nCreating a new virtual environment, for Jupter Notebook ..."
-    python3 -m venv "$VENV_DIR"
+    echo -e "Could not find driectory: $VENV_DIR \nCreating a new virtual environment for Jupyter Notebooks."
+    python3.12 -m venv "$VENV_DIR"
 fi
 
 
