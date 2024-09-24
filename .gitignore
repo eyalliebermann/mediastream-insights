@@ -15,3 +15,8 @@ __pycache__/
 *.pyd
 
 .DS_Store
+
+#media folders
+/local/
+/temp/
+/media/
