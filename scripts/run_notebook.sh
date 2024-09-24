@@ -31,6 +31,8 @@ if [ ! -f "$ENV_FILE" ]; then
     touch "$ENV_FILE"
 fi
 
+# Load environment variables from .env file
+export $(grep -v '^#' "$ENV_FILE" | xargs)
 
 # Check if venv exists, if not create it
 if [ ! -d "VENV_DIR" ]; then
