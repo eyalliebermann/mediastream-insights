@@ -129,7 +129,3 @@ Thank you for contributing to this project!
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-By following these steps, users will be able to set up the environment, process videos locally, and contribute seamlessly without worrying about leaking sensitive information into the repository.
